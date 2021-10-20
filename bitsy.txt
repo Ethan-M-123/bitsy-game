@@ -238,12 +238,12 @@ ROOM 9
 l,o,o,o,o,o,o,o,o,o,o,o,0,o,o,n
 0,o,o,o,o,o,o,o,o,0,0,0,0,0,0,o
 0,0,0,0,o,0,0,o,o,o,0,0,0,g,0,0
-0,0,0,0,0,0,0,o,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,o,o,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,o,o,o,0,0,0,0,0,0
+0,0,0,14,0,0,0,o,o,0,0,14,0,0,14,0
 0,0,0,0,0,0,o,o,o,0,0,0,0,0,0,0
-0,0,0,14,0,0,o,o,o,0,0,14,0,0,14,0
-0,0,0,0,0,0,o,o,o,0,0,0,0,0,0,0
-0,g,0,0,0,o,o,o,o,o,g,0,0,0,0,0
-0,0,0,0,0,o,o,o,20,o,0,0,0,0,0,0
+0,g,0,0,0,0,0,o,o,2r,2s,0,g,0,0,0
+0,0,0,0,0,0,0,0,20,2t,2u,0,0,0,0,0
 NAME Pumpkin Patch
 EXT 0,7 0 15,7
 EXT 15,7 a 0,9
@@ -260,7 +260,7 @@ t,t,t,t,t,f,f,f,f,f,t,t,t,t,t,t
 14,0,0,0,0,0,o,o,o,0,0,0,0,0,g,0
 0,0,0,g,0,0,o,o,o,0,0,0,0,14,0,0
 0,0,0,0,0,0,o,o,o,o,0,0,0,0,0,0
-0,o,o,0,o,o,o,o,o,o,0,0,0,0,0,0
+l,o,o,0,o,o,o,o,o,o,0,0,0,0,0,0
 o,0,o,o,o,o,o,o,o,o,o,o,o,o,o,o
 o,0,0,o,o,o,o,o,o,o,o,o,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -486,8 +486,8 @@ PAL 0
 
 ROOM k
 21,21,21,21,0,0,o,10,o,o,0,0,21,21,21,21
-l,24,21,21,g,0,o,o,o,o,0,0,21,21,21,21
-0,0,24,23,0,o,o,o,o,o,0,0,21,21,21,21
+0,24,21,21,g,0,o,o,o,o,0,0,21,21,21,21
+l,0,24,23,0,o,o,o,o,o,0,0,21,21,21,21
 26,0,0,0,0,0,0,o,o,o,0,0,21,21,21,21
 21,21,26,0,0,o,o,o,o,o,0,0,21,21,21,21
 21,21,21,26,0,o,o,o,o,o,0,0,21,21,21,21
@@ -502,12 +502,11 @@ l,0,0,0,25,21,21,26,0,0,25,26,0,0,o,o
 0,0,0,0,21,21,21,21,0,0,0,0,0,0,0,0
 0,0,20,0,21,21,21,21,0,0,0,0,0,0,0,n
 NAME Center_bottom
-ITM 3 11,2
 EXT 7,0 f 7,15
 EXT 0,12 n 15,12
 EXT 15,15 l 0,15
 EXT 2,15 p 2,0
-EXT 0,1 n 15,1
+EXT 0,2 n 15,2
 PAL 0
 
 ROOM l
@@ -559,8 +558,8 @@ PAL 0
 
 ROOM n
 21,21,21,21,21,21,21,23,0,10,24,21,21,21,21,21
-21,23,0,0,0,0,0,0,0,0,25,21,23,0,0,n
-21,0,0,21,21,21,21,21,26,0,21,21,26,0,0,0
+21,23,0,0,0,0,0,0,0,0,25,21,23,0,0,0
+21,0,0,21,21,21,21,21,26,0,21,21,26,0,0,n
 21,0,0,0,21,21,21,21,21,0,24,21,21,0,0,25
 21,26,0,25,21,21,21,21,23,0,0,21,21,0,25,21
 21,21,21,21,21,21,21,23,0,0,25,21,21,0,21,21
@@ -579,7 +578,7 @@ ITM 4 3,3
 EXT 15,12 k 0,12
 EXT 0,8 o 15,8
 EXT 9,15 r 9,0
-EXT 15,1 k 0,1
+EXT 15,2 k 0,2
 EXT 9,0 g 9,15
 PAL 0
 
@@ -672,7 +671,6 @@ ROOM r
 21,21,21,21,21,21,21,21,21,21,21,21,21,21,21,21
 21,21,21,21,21,21,21,21,21,21,21,21,21,21,21,21
 NAME Bottom_Left
-ITM 7 9,10
 EXT 9,0 n 9,15
 EXT 15,7 p 0,7
 PAL 0
@@ -1913,6 +1911,50 @@ TIL 2q
 NAME under_boulder
 WAL true
 
+TIL 2r
+11111111
+10000000
+10111000
+10100100
+10110001
+10100101
+10100101
+10000000
+NAME field_sign1
+
+TIL 2s
+11111111
+00000001
+00000001
+00100101
+10100101
+10101101
+00101101
+00000001
+NAME field_sign2
+
+TIL 2t
+11111111
+00000001
+00000001
+00000001
+00000000
+00000000
+00000000
+00000000
+NAME field_sign3
+
+TIL 2u
+11111111
+10000000
+10000000
+10000000
+00000000
+00000000
+00000000
+00000000
+NAME field_sign4
+
 SPR 10
 00111100
 01100110
@@ -2792,35 +2834,88 @@ DLG 9
 NAME sprite g dialog
 
 DLG 10
-You found some {shk}{wvy}lost shoes{wvy}{shk}! Who's could they be? {items_collected = items_collected + 1}{print {10 - items_collected} items_collected} more items to go!
+"""
+{
+  - items_collected == 7 ?
+    You found some lost shoes! Who's could they be? {items_collected = items_collected + 1}
+    I think that's everything.
+  - else ?
+    You found some lost shoes! Who's could they be?
+    {items_collected = items_collected + 1}{print {8 - items_collected} items_collected} more items to go!
+}
+"""
 NAME lost shoes dialog
 
 DLG 11
-It sounds like snoring?
+"""
+You can hear snoring from beyond the wall.
+What could be sleeping here in the cave?
+"""
 NAME button dialog
 
 DLG 12
-There's a small hole here...
+"""
+There's a small hole, maybe something crawled inside.
+Oh well, you're too small to fit inside.
+"""
 NAME button2 dialog
 
 DLG 13
-There's some hidden paths in this field, I suggest you be careful.
+"""
+{cycle
+  - There's some hidden paths in this field.
+    I suggest you be careful.
+  - Also there's a whole underground portion you need to be careful of.
+    Usually pretty weird stuff down there.
+  -  That's pretty much it though, so have fun out there!
+  -  listen buddy, I don't work here so could quit bothering me?
+}
+"""
 NAME field_npc2 dialog
 
 DLG 14
-We're here to have some friendly competition, find all 10 items in the field. I know you can do it!
+"""
+{
+  - items_collected == 8 ?
+    {rbw}Congratulations{rbw}, you've found all the items!
+    Be sure to give yourself a pat on the back.{all_items_collected = 1}
+  - items_collected > 0 ?
+    Only {print {8 - items_collected} items_collected} items to go, you got this!
+  - else ?
+    We're here to have some friendly competition.
+    Find all {wvy}8 items{wvy} in the field. I know you can do it!
+}
+"""
 NAME field_npc1 dialog
 
 DLG 15
-Outta my way! I'm gonna find all of those items, you'll see!
+"""
+{
+  - all_items_collected == 1 ?
+    What, you found them all!?!
+    Oh well, maybe I'll have better luck next year...
+  - else ?
+    Outta my way! I'm gonna find all of those items, you'll see!
+}
+"""
 NAME field_npc3 dialog
 
 DLG 16
-You know this fields haunted right? People go missing here all the time! I'm thinkin' it's aliens.
+"""
+You know this fields haunted right?
+People go missing here all the time!
+I'm thinkin' it's aliens.
+"""
 NAME field_npc4 dialog
 
 DLG 17
-I didn't know the field had caves! If only it wasn't so dark it'd be a nice place to hang.
+"""
+{cycle
+  - I didn't know the field had caves!
+    If only it wasn't so dark it'd be a nice place to hang.
+  - Actually it's like, really dark in here. Maybe I should go...
+}
+"""
 NAME under_npc1 dialog
 
 DLG a
@@ -2915,19 +3010,55 @@ You found a leaf! {items_collected = items_collected + 1}{print {10 - items_coll
 NAME leaf dialog
 
 DLG s
-You found a {shk}{wvy}lost hat{wvy}{shk}! Must have been blow off by the wind. {items_collected = items_collected + 1}{print {10 - items_collected} items_collected} more items to go!
+"""
+{
+  - items_collected == 7 ?
+    You found a lost hat! Must have been blown off by the wind. {items_collected = items_collected + 1}
+    I think that's everything.
+  - else ?
+    You found a lost hat! Must have been blown off by the wind.
+    {items_collected = items_collected + 1}{print {8 - items_collected} items_collected} more items to go!
+}
+"""
 NAME lost hat dialog
 
 DLG t
-You found a pinecone! {items_collected = items_collected + 1}{print {10 - items_collected}} more items to go!
+"""
+{
+  - items_collected == 7 ?
+    You found a pinecone! {items_collected = items_collected + 1}
+    I think that's everything.
+  - else ?
+    You found a pinecone!
+    {items_collected = items_collected + 1}{print {8 - items_collected} items_collected} more items to go!
+}
+"""
 NAME pinecone dialog
 
 DLG u
-You found a pumpkin! {items_collected = items_collected + 1}{print {10 - items_collected} items_collected} more items to go!
+"""
+{
+  - items_collected == 7 ?
+    You found a pumpkin! {items_collected = items_collected + 1}
+    I think that's everything.
+  - else ?
+    You found a pumpkin!
+    {items_collected = items_collected + 1}{print {8 - items_collected} items_collected} more items to go!
+}
+"""
 NAME pumpkin dialog
 
 DLG v
-You found a acorn! {items_collected = items_collected + 1}{print {10 - items_collected} items_collected} more items to go!
+"""
+{
+  - items_collected == 7 ?
+    You found an acorn! {items_collected = items_collected + 1}
+    I think that's everything.
+  - else ?
+    You found an acorn!
+    {items_collected = items_collected + 1}{print {8 - items_collected} items_collected} more items to go!
+}
+"""
 NAME acorn dialog
 
 DLG w
@@ -2935,20 +3066,50 @@ You found a twig! {items_collected = items_collected + 1}{print {10 - items_coll
 NAME twig dialog
 
 DLG x
-You found a bug! {items_collected = items_collected + 1}{print {10 - items_collected} items_collected} more items to go!
+"""
+{
+  - items_collected == 7 ?
+    You found a bug! Eww... {items_collected = items_collected + 1}
+    I think that's everything.
+  - else ?
+    You found a bug! Eww...
+    {items_collected = items_collected + 1}{print {8 - items_collected} items_collected} more items to go!
+}
+"""
 NAME bug dialog
 
 DLG y
-You found a shiny pebble! {items_collected = items_collected + 1}{print {10 - items_collected} items_collected} more items to go!
+"""
+{
+  - items_collected == 7 ?
+    You found a shiny pebble! {items_collected = items_collected + 1}
+    I think that's everything.
+  - else ?
+    You found a shiny pebble!
+    {items_collected = items_collected + 1}{print {8 - items_collected} items_collected} more items to go!
+}
+"""
 NAME shiny pebble dialog
 
 DLG z
-You found a {shk}{wvy}lost scarf{wvy}{shk}! Who left this here? {items_collected = items_collected + 1}{print {10 - items_collected} items_collected} more items to go!
+"""
+{
+  - items_collected == 7 ?
+    You found a lost scarf! Who left this here? {items_collected = items_collected + 1}
+    I think that's everything.
+  - else ?
+    You found a lost scarf! Who left this here
+    {items_collected = items_collected + 1}{print {8 - items_collected} items_collected} more items to go!
+}
+"""
 NAME lost scarf dialog
 
 VAR a
 42
 
 VAR items_collected
+0
+
+VAR all_items_collected
 0
 
